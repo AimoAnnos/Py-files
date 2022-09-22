@@ -1,4 +1,4 @@
-Space Invaders project made pygame at Taitotalo
+Space Invaders project made using pygame
 
 Background music info:
 
