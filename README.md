@@ -1,2 +1,2 @@
 # Py-files
-python stuff during at Taitotalo python programming course
+python stuff made during Taitotalo python programming course
