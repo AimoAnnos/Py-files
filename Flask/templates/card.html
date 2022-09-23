@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %} Card Details {% endblock %}
+
+{% block content %}
+
+     <h1>Flash Card</h1>
+<!--
+    <br>
+        <a href="{{ url_for('welcome')}}"> tarkistaa flashcard.py reiteistä welcome funktion ja menee siellä määritettyyn urliin
+            clicketi!
+        </a>
+        <br>  -->
+   Question: {{ korttiparametri.question }} 
+    <br>
+    Answer: {{ korttiparametri.answer }}
+    <br>
+        <p>
+            
+            <!--    <a href="/card/{{ index +1 }}"> -->
+                {% if index < max_index %}
+                <button><a href="{{ url_for('card_view', index = index +1) }}" >Next</a></button>
+
+                <button><a href="{{ url_for('welcome') }}">Cancel</a></button>
+                {% else %}
+                <button><a href="{{ url_for('card_view', index = 0)}} ">Start over</a></button>
+                {% endif %}
+            
+        </p>
+        
+{% endblock  %}

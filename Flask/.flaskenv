@@ -1,0 +1,2 @@
+FLASK_APP=flashcards
+FLASK_ENV=development

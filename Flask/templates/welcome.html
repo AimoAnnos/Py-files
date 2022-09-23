@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Welcome Page {% endblock %}
+
+{% block content %}
+
+    <h1>Welcome to Flash Cards</h1>
+   <!-- <ul>+<li> = unordered HTML list -->
+    <ul>   
+        {% for card in cards %}
+         <li>   <a href="{{ url_for('card_view', index=loop.index0) }}" >{{ card.question }}</a> </li>
+        {% endfor %}
+        <br>
+        <button><a href="{{ url_for('add_card') }}">Add Card </a></button>
+        <button><a href="{{ url_for('delete_card', index=0) }}">Delete Card</a> </button>
+    </ul>
+
+{% endblock  %}

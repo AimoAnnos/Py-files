@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %} Delete Card {% endblock %}
+
+{% block content %}
+
+    <h1>Delete a Card</h1>
+
+    <form method="post">
+        {{card.question}}
+        <br>
+        {{card.answer}}
+        <br>
+        <br>
+        {% if index <= max_index %}
+        <button type="submit">Yes, delete </button>
+        
+        <button><a href="{{ url_for('delete_card', index = index+1) }}">Next</a></button>
+
+        <button><a href="{{ url_for('welcome') }}">Cancel</a></button>
+        
+        {% else %}
+        <button> <a href="{{ url_for('delete_card', index = 0)}} ">Start over</a></button>
+        {% endif %}
+    
+    </form>
+    
+{% endblock  %}
