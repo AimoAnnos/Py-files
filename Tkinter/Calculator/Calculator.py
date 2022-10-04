@@ -150,7 +150,7 @@ negate_button = tkinter.Button(button_frame, text='+/-', font=button_font, bg=mi
 nine_button = tkinter.Button(button_frame, text='9', font=button_font, bg=mid_gray, fg='white', command=lambda: submit_number(9))
 eight_button = tkinter.Button(button_frame, text='8', font=button_font, bg=mid_gray, fg='white', command=lambda: submit_number(8))
 seven_button = tkinter.Button(button_frame, text='7', font=button_font, bg=mid_gray, fg='white',command=lambda: submit_number(7))
-sixsixsix_button = tkinter.Button(button_frame, text='6', font=button_font, bg=mid_gray, fg='white',command=lambda: submit_number(6))
+six_button = tkinter.Button(button_frame, text='6', font=button_font, bg=mid_gray, fg='white',command=lambda: submit_number(6))
 five_button = tkinter.Button(button_frame, text='5', font=button_font, bg=mid_gray, fg='white',command=lambda: submit_number(5))
 four_button = tkinter.Button(button_frame, text='4', font=button_font, bg=mid_gray, fg='white',command=lambda: submit_number(4))
 three_button = tkinter.Button(button_frame, text='3', font=button_font, bg=mid_gray, fg='white',command=lambda: submit_number(3))
@@ -174,7 +174,7 @@ multiply_button.grid(row=2,column=3, pady=1, sticky='WE', ipadx=20)
 #fourth row
 four_button.grid(row=3,column=0,pady=1, sticky='WE')
 five_button.grid(row=3,column=1,pady=1, sticky='WE')
-sixsixsix_button.grid(row=3,column=2,pady=1, sticky='WE')
+six_button.grid(row=3,column=2,pady=1, sticky='WE')
 subtract_button.grid(row=3,column=3,pady=1, sticky='WE')
 #fifth row
 one_button.grid(row=4,column=0,pady=1, sticky='WE')
